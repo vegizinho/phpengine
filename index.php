@@ -10,7 +10,7 @@ include "core/engine.php";
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Luxura Bootstrap Template Prototype</title>
+<title>TECHLAB Bootstrap PHP Engine</title>
 
 <!-- Bootstrap -->
 
@@ -37,28 +37,28 @@ include "core/engine.php";
 							class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Luxura</a>
+					<a class="navbar-brand" href="index.php">Brand name</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right"
 					id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="http://www.mikro.hr">Mikro početna</a></li>
-						<li class="dropdown"><a href="index.php">Luxura početna</a></li>
+						<li class="dropdown"><a href="#">Link 1</a></li>
+						<li class="dropdown"><a href="#">Link 2</a></li>
 						<li class="dropdown"><a href="#" class="dropdown-toggle"
-							data-toggle="dropdown">Proizvodi<span class="caret"></span>
+							data-toggle="dropdown">Services<span class="caret"></span>
 						</a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="index.php?qs=layout2">Luxura X10</a></li>
-								<li><a href="index.php?qs=layout3">Luxura X5</a></li>
-								<li><a href="index.php?qs=layout2">Luxura X3</a></li>
-								<li><a href="index.php?qs=layout3">Luxura V10</a></li>
-								<li><a href="index.php?qs=layout2">Luxura V7</a></li>
-								<li><a href="index.php?qs=layout3">Luxura V5</a></li>
+								<li><a href="index.php?qs=layout2">Service 1</a></li>
+								<li><a href="index.php?qs=layout3">Service 2</a></li>
+								<li><a href="index.php?qs=layout2">Service 3</a></li>
+								<li><a href="index.php?qs=layout3">Service 4</a></li>
+								<li><a href="index.php?qs=layout2">Service 5</a></li>
+								<li><a href="index.php?qs=layout3">Service 6</a></li>
 							</ul>
 						</li>
-						<li class="dropdown"><a href="index.php?qs=kontakt">Kontakt</a></li>
+						<li class="dropdown"><a href="index.php?qs=kontakt">Contact Us</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -72,7 +72,49 @@ include "core/engine.php";
 	
 	
 <!-- START Main part of the content -->
-	<?php $web -> getPage($input); ?>
+	<?php //$web -> getPage($input); ?>
+	
+	<div class="container">
+		<div class="row">
+		
+			<?php $web -> getZone('bigImage')?>
+			
+			<div class="col-md-6">
+				<h2>Some title 1</h2>
+				<p>Just a simple paragraph text. Just a simple paragraph text. Just
+					a simple paragraph text. Just a simple paragraph text. Just a
+					simple paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text.</p>
+				<h2>Some title 2</h2>
+				<p>Just a simple paragraph text. Just a simple paragraph text. Just
+					a simple paragraph text. Just a simple paragraph text. Just a
+					simple paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text. Just a simple
+					paragraph text. Just a simple paragraph text.</p>
+			</div>
+			<div class="col-md-3">
+				<div class="list-group movedown1">
+					<a href="#" class="list-group-item active">Some Model</a>
+					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right moveright1"></span>Features</a>
+					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right moveright1"></span>Technical data</a>
+					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right moveright1"></span>Maintenence</a>
+					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right moveright1"></span>Photo gallery</a>
+					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right moveright1"></span>Brochures</a>
+				</div>
+			</div>
+		</div>
+</div>
+	
+	
 <!-- END Main part of the content -->
 	
 	
@@ -84,8 +126,7 @@ include "core/engine.php";
 				<div class="col-md-12">
 					<strong>Copyright
 					<?php echo date('Y'); ?>
-					. &copy; Mikro d.o.o. Sva prava pridržana.</strong> Zabranjeno kopiranje i
-					prenošenje informacija sa stranice bez prethodne dozvole.
+					. &copy; TECHLAB LLC All Rights Reserved.</strong> Legal notice and Terms of Use.
 				</div>
 			</div>
 		</div>

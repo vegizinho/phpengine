@@ -6,11 +6,11 @@ if(isset($_GET["qs"]))
 }
 else
 {
-	$input = "naslovna";
+	$input = "start";
 }
 
 
-require_once "core/coreclass.php";
+include "core/coreclass.php";
 
 $web = new core;
 
