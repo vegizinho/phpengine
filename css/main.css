@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+
+
+body
+{
+	background-color: #ddd;
+}
+
+.container
+{
+	background-color: #fff;
+}
+
+.fullwidth
+{
+	width: 100%;
+	background-color: #fff;
+	margin: auto;
+}
+
+.movedown1
+{
+	margin-top: 20px;
+}
+
+.moveright1
+{
+	margin-right: 5px;
+}]
+
+.frontpage-imagelist ul, li
+{
+	bullet-style: none;
+	display: inline-block;
+}
+
+.subcontent
+{
+	font-size: 13px;
+	text-align: justify;
+}
+
+.btn-sm, .btn-group-sm>.btn
+{
+	background-color: #ddd;
+	margin-bottom: 10px;
+}
+
+.footer
+{
+	margin-top: 20px;
+	text-align: right;
+	color: #999;
+	font-size: 12px;
+}

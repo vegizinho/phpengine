@@ -1,0 +1,10 @@
+RewriteEngine on
+ RewriteCond %{HTTP_HOST} ^(.+\..+)$ [NC]
+ RewriteCond %{HTTP_HOST} !^.+\..+\..+$ [NC]
+ RewriteRule ^(.*)$ http://www.%1/$1 [L,R=301]
+ RewriteCond %{HTTP_HOST} ^(.*)$ [NC]
+ RewriteRule ^files/(.*)$ sites/%1/files/$1 [L]
+ RewriteRule ^files/(.*)$ sites/%1/files/$1 [L]
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteRule ^(.*)$ index.php?qs=$1 [L,QSA]
